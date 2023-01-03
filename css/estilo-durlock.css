@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-color: grey;
+	position: absolute;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+	height: 20%;
+	background-color: #D35400;
+	position: relative;
+	overflow: hidden;
+}
+
+a{
+	text-decoration:none;
+}
+
+.nav1{
+	width: 100%;
+	height:70%;
+	background-color: #515A5A;
+
+}
+
+.nav1__logo img{
+	width: 13%;
+	height: 47%;
+	margin-top: 1.2%;
+	margin-left: 1%;
+	display: inline-block;
+	position: absolute;
+}
+
+.nav1__menu1{
+	position: absolute;
+	width: 50%;
+	height:40%;
+	display: inline-block;
+	margin:2.3% 20% 3% 44%;
+	padding: 0.5%;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+.nav1__menu1 a{
+	color: white;
+	background-color: black;
+	border-radius: 20%;
+	padding: 2%;
+	margin-right: 2%;
+	font-size: 90%;
+	font-family: calibri;
+}
+
+.face img{
+	width: 5%;
+	height: 35%;
+	margin-top: 1.6%;
+	margin-left: 77%;
+	display: inline-block;
+	position: absolute;
+}
+
+.insta img{
+	width: 7%;
+	height: 47%;
+	margin-top: 1.2%;
+	margin-left: 82.5%;
+	display: inline-block;
+	position: absolute;
+}
+
+.wsp img{
+	width: 4%;
+	height: 33%;
+	margin-top: 1.8%;
+	margin-left: 90%;
+	display: inline-block;
+	position: absolute;
+}
+
+.nav2{
+	width: 100%;
+	height:30%;
+	background-color: #F1C40F;
+	position: relative;
+}
+
+.nav2__menu2{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	padding: 0.8%;
+	align-content: center;
+}
+
+.nav2__menu2 a{
+	color: white;
+	background-color: black;
+	border-radius: 20%;
+	font-size: 90%;
+	font-family: calibri;
+	padding: 0.3%;
+	margin-left: 9%;
+}
+
+main{
+	width: 100%;
+	height: 80%;
+	position: relative;
+	background-color: white;
+}
+
+.img-1{
+	width:100%;
+	height: 100%;
+	background-color: grey;
+	background-image: url("../images/durlock1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 8;
+}

@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #fff;
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 0.4fr 2.3fr; 
+	grid-template-areas: 
+	"header"
+	"main";
+}
+
+a{
+	text-decoration:none;
+}
+
+.nav1{
+	height:100%;
+	background: rgb(46,46,46);
+	background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(61,70,60,1) 10%, rgba(81,90,80,1) 25%, rgba(81,90,80,1) 75%, rgba(61,70,60,1) 90%, rgba(46,46,46,1) 100%);
+	display: grid;
+	grid-template-columns:1fr 1.5fr 1fr;
+	align-items: center;
+	grid-template-areas: 
+	"logo botones iconos";
+}
+
+.nav1__logo img{
+	grid-area: logo;
+	width: 55%;
+	transition: transform 0.8s;
+}
+
+.nav1__logo img:hover{
+	transform: scale(1.1);
+	filter: drop-shadow(0px 0px 1px #000);
+}
+
+.nav1__botones1{
+	grid-area: botones;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.nav1__botones1 a{
+	color: white;
+	font-size: 110%;
+	font-family: calibri;
+	margin-right: 5%;
+	text-align: center;
+	transition: transform 0.8s;
+	letter-spacing: 2px;
+}
+
+.nav1 a:hover{
+	transform: scale(1.1);
+	color: #000;
+	filter: drop-shadow(0px 0px 1px #000);
+}
+
+.nav1__botones2{
+	grid-area: iconos;
+	margin-left: 15%;
+	justify-content: space-around;
+}
+
+.face img{
+	width: 15%;
+	margin-right: 5%;
+	transition: transform 0.5s;
+}
+
+.insta img{
+	width: 15%;
+	margin-right: 5%;
+	transition: transform 0.5s;
+}
+
+.wsp img{
+	width: 15%;
+	transition: transform 0.5s;
+}
+
+.nav1__botones2 img:hover{
+	transform: scale(1.3);
+	filter: drop-shadow(0px 0px 1px #000);
+}
+
+main{
+	grid-template-areas: main;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 67%, rgba(239,184,16,1) 100%);
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: 
+	"mapa formulario";
+}
+
+.img-1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.img-1 a{
+	width: 80%;
+	height: 70%;
+}
+.mapa img{
+	grid-area: mapa;
+	width: 100%;
+	height: 100%;
+	box-shadow: 20px 20px 20px 0 #A6ACAF;
+	border-radius: 20px;
+	transition: all 1s;
+}
+
+.mapa img:hover{
+	transform: scale(1.1);
+}
+
+.formulario{
+	grid-area: formulario;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+.datos{
+	height: 100%;
+	font-size: 90%;
+	font-family: calibri, cursive;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	padding: 2%;
+}
+*Dirección: Ruta 8 Nº 8954 (1657) Loma Hermosa. Provincia de Buenos Aires - Argentina. 
+*Teléfono: (54.11) 2142-7380
+*E-Mail: info@industriacem.com.ar
+*/
+
+/*ESCRITORIO PRIMERO*/
+
+@media only screen and (max-width: 2561px){
+
+	.nav-responsive, .nav-responsive2{
+		display: none;
+	}
+
+	.nav-responsive__checkbox{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1441px){
+
+	.nav-responsive, .nav-responsive2{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 769px){
+
+	.nav-responsive, .nav-responsive2{
+		display: none;
+	}
+
+	main{
+		display: grid;
+		grid-template-rows:0.5fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"mapa" 
+		"formulario";
+	}
+
+	.img-1 a{
+		width: 60%;
+		height: 80%;
+	}
+}
+
+@media only screen and (max-width: 425px){
+
+	body{
+		background-color: #515A5A;
+		display: grid;
+		height: 100vh;
+		grid-template-rows: 0.2fr 2.4fr; 
+		grid-template-areas: 
+		"nav-responsive"
+		"main"
+	}
+
+	.nav1, .nav2{
+		display: none;
+	}
+
+	.nav-responsive{
+		height: 100%;
+		grid-area: nav-responsive;
+		background: rgb(46,46,46);
+		background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(61,70,60,1) 10%, rgba(81,90,80,1) 25%, rgba(81,90,80,1) 75%, rgba(61,70,60,1) 90%, rgba(46,46,46,1) 100%);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "logo icono";
+		align-items: center;
+		position: relative;
+	}
+
+	.nav-responsive__logo img{
+		grid-area: logo;
+		width: 60%;
+		transition: transform 0.8s;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.nav-responsive__logo img:hover{
+		transform: scale(1.1);
+		filter: drop-shadow(0px 0px 1px #000);
+	}
+
+	.nav-responsive__icono img{
+		grid-area: icono;
+		width: 15%;
+		float: right;
+		margin-right: 10%;
+		border-radius: 10px;
+	}
+
+	main{
+		position: relative;
+		display: grid;
+		grid-template-rows:1fr 1fr;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"mapa" 
+		"formulario";
+	}
+
+	.nav-responsive__checkbox{
+		display: none;
+	}
+
+	.nav-responsive2{
+		height: 60%;
+		width: 100%;
+		position: absolute;
+		z-index: 5;
+		transition: 0.8s;
+		transform: translateX(-100%);
+		background-color: black;
+		opacity: 0.8;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 2%;
+	}
+
+	.nav-responsive2 a{
+		text-decoration: none;
+		color: white;
+		font-weight: 400;
+		font-family: calibri;
+		letter-spacing: 2px;
+		padding: 4% 0% 0% 1%;
+	}
+
+	.nav-responsive2 a:hover{
+		border-bottom: 1px solid white;
+		transform: scale(1.1);
+	}
+
+	.nav-responsive__checkbox:checked + .nav-responsive2{/*EL + FUNCIONA SOLO SI LA SEGUNDA CAJA
+		VA A CONTINUACION DE LA PRIMERA EN EL HTML*/
+		transform: translateX(0%);
+	}
+}
